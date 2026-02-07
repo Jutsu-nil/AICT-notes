@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AICT Lectures – Week 14</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg,#0b1220,#020617);
+    color:#e5e7eb;
+}
+.header{
+    padding:40px 20px;
+    text-align:center;
+    background:#020617;
+    border-bottom:1px solid #1e293b;
+}
+.header h1{ margin:0; font-size:42px; color:#38bdf8; }
+.header p{ margin-top:10px; font-size:18px; color:#cbd5f5; }
+
+.navbar{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:14px;
+    padding:25px 20px;
+}
+.nav-btn{
+    padding:12px 20px;
+    border-radius:14px;
+    background:#1e293b;
+    color:#e5e7eb;
+    border:1px solid #334155;
+    text-decoration:none;
+}
+.nav-btn:hover{ background:#334155; }
+.nav-btn.active{
+    background:#0ea5e9;
+    color:#020617;
+    font-weight:bold;
+}
+
+.container{
+    max-width:1100px;
+    margin:30px auto 60px;
+    padding:10px;
+}
+.box{
+    background:#020617;
+    border:1px solid #1e293b;
+    border-radius:14px;
+    padding:22px;
+    margin-bottom:24px;
+}
+.box h2{ margin-top:0; color:#22d3ee; }
+ul{ padding-left:20px; }
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:12px;
+}
+th, td{
+    border:1px solid #1e293b;
+    padding:10px;
+}
+th{ color:#38bdf8; }
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>AICT Lectures</h1>
+    <p>Week 14 Notes</p>
+</div>
+
+<div class="navbar">
+    <a class="nav-btn" href="index.html">Week 5</a>
+    <a class="nav-btn" href="week6.html">Week 6</a>
+    <a class="nav-btn" href="week7.html">Week 7</a>
+    <a class="nav-btn" href="week8.html">Week 8</a>
+    <a class="nav-btn" href="week9.html">Week 9</a>
+    <a class="nav-btn" href="week11-13.html">Week 11</a>
+    <a class="nav-btn" href="week11-13.html">Week 12</a>
+    <a class="nav-btn" href="week11-13.html">Week 13</a>
+    <a class="nav-btn active" href="week14.html">Week 14</a>
+    <a class="nav-btn" href="week15.html">🎯 Week 15</a>
+</div>
+
+<div class="container">
+
+<div class="box">
+<h2>🌐 Network</h2>
+<ul>
+<li>A network is a system of interconnected devices that exchange data and share resources.</li>
+<li>Devices include computers, servers, smartphones, printers, and IoT devices.</li>
+<li>Connections can be wired (cables, fiber optics) or wireless (Wi-Fi, Bluetooth).</li>
+</ul>
+</div>
+
+<div class="box">
+<h2>🎯 Purpose of Networks</h2>
+<ul>
+<li>Communication – fast information sharing (emails, video calls).</li>
+<li>Resource sharing – printers, software, and data.</li>
+<li>Centralized management of devices.</li>
+<li>Collaboration using shared platforms.</li>
+<li>Scalability to support growth.</li>
+</ul>
+</div>
+
+<div class="box">
+<h2>🏠 Network Types</h2>
+<ul>
+<li>PAN – Personal Area Network</li>
+<li>LAN – Local Area Network</li>
+<li>MAN – Metropolitan Area Network</li>
+<li>WAN – Wide Area Network</li>
+</ul>
+</div>
+
+<!-- LAN DETAILED -->
+<div class="box">
+<h2>🏢 LAN (Local Area Network)</h2>
+<ul>
+<li>Connects devices within a limited geographic area such as a home, office, or campus.</li>
+<li>Privately owned and controlled.</li>
+<li>Supports very high data transfer speeds.</li>
+<li>Uses wired (Ethernet) or wireless (Wi-Fi) connections.</li>
+<li>Common topologies: Star, Bus, Hybrid.</li>
+</ul>
+</div>
+
+<div class="box">
+<h2>✔ LAN Advantages</h2>
+<ul>
+<li>High speed communication.</li>
+<li>Cost-effective setup.</li>
+<li>Centralized resource sharing.</li>
+<li>Improved collaboration.</li>
+<li>Easier security management.</li>
+</ul>
+</div>
+
+<div class="box">
+<h2>❌ LAN Limitations</h2>
+<ul>
+<li>Limited coverage area.</li>
+<li>Initial setup cost can be high.</li>
+<li>Requires maintenance.</li>
+</ul>
+</div>
+
+<!-- WAN DETAILED -->
+<div class="box">
+<h2>🌍 WAN (Wide Area Network)</h2>
+<ul>
+<li>Covers very large geographical areas (countries, continents).</li>
+<li>Interconnects LANs and MANs.</li>
+<li>May be public (Internet) or private (corporate WAN).</li>
+<li>Uses fiber optics, satellite, leased lines, MPLS, VPNs.</li>
+<li>Higher latency due to long distances.</li>
+</ul>
+</div>
+
+<div class="box">
+<h2>✔ WAN Advantages</h2>
+<ul>
+<li>Global connectivity.</li>
+<li>Centralized resource access.</li>
+<li>Supports remote access.</li>
+<li>High reliability using redundancy.</li>
+<li>Supports cloud services.</li>
+</ul>
+</div>
+
+<div class="box">
+<h2>❌ WAN Limitations</h2>
+<ul>
+<li>High cost.</li>
+<li>Higher latency.</li>
+<li>Complex management.</li>
+<li>Security challenges.</li>
+</ul>
+</div>
+
+<!-- TOPOLOGIES -->
+<div class="box">
+<h2>🧩 Network Topology</h2>
+<ul>
+<li>Refers to the arrangement of nodes and links in a network.</li>
+<li>Affects performance, cost, scalability, and fault tolerance.</li>
+</ul>
+</div>
+
+<div class="box">
+<h2>🚌 Bus Topology</h2>
+<ul>
+<li>All devices connected to a single central cable.</li>
+<li>Easy and low cost.</li>
+<li>Main cable failure disrupts entire network.</li>
+</ul>
+</div>
+
+<div class="box">
+<h2>⭐ Star Topology</h2>
+<ul>
+<li>All devices connected to a central hub or switch.</li>
+<li>Most common LAN topology.</li>
+<li>Failure of hub affects entire network.</li>
+</ul>
+</div>
+
+<div class="box">
+<h2>🔁 Ring Topology</h2>
+<ul>
+<li>Devices connected in a circular loop.</li>
+<li>Data travels in one direction.</li>
+<li>Failure of one device can break network.</li>
+</ul>
+</div>
+
+<div class="box">
+<h2>🕸 Mesh Topology</h2>
+<ul>
+<li>Each device connected to multiple devices.</li>
+<li>Highly reliable and fault-tolerant.</li>
+<li>Expensive and complex.</li>
+</ul>
+</div>
+
+<div class="box">
+<h2>🔀 Hybrid Topology</h2>
+<ul>
+<li>Combination of two or more topologies.</li>
+<li>Flexible and scalable.</li>
+<li>Complex to manage.</li>
+</ul>
+</div>
+
+<!-- FINAL TABLE -->
+<div class="box">
+<h2>📊 Topology Comparison</h2>
+<table>
+<tr>
+<th>Topology</th><th>Cost</th><th>Scalability</th><th>Fault Tolerance</th><th>Maintenance</th>
+</tr>
+<tr><td>Bus</td><td>Low</td><td>Low</td><td>Low</td><td>Moderate</td></tr>
+<tr><td>Star</td><td>Moderate</td><td>High</td><td>Moderate</td><td>Easy</td></tr>
+<tr><td>Ring</td><td>Moderate</td><td>Moderate</td><td>Low</td><td>Difficult</td></tr>
+<tr><td>Mesh</td><td>High</td><td>High</td><td>Very High</td><td>Difficult</td></tr>
+<tr><td>Hybrid</td><td>High</td><td>High</td><td>High</td><td>Complex</td></tr>
+</table>
+</div>
+
+</div>
+</body>
+</html>
