@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AICT Lectures – Week 11–13</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg,#0b1220,#020617);
+    color:#e5e7eb;
+}
+.header{
+    padding:40px 20px;
+    text-align:center;
+    background: linear-gradient(180deg,#1e293b,#020617);
+    border-bottom:1px solid #1e293b;
+}
+.header h1{
+    margin:0;
+    font-size:42px;
+    color:#38bdf8;
+}
+.header p{
+    margin-top:10px;
+    font-size:18px;
+    color:#cbd5f5;
+}
+.navbar{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    padding:30px 20px;
+}
+.nav-btn{
+    padding:14px 22px;
+    border-radius:16px;
+    background:#1e293b;
+    color:#e5e7eb;
+    border:1px solid #334155;
+    font-size:16px;
+    text-decoration:none;
+}
+.nav-btn:hover{ background:#334155; }
+.nav-btn.active{
+    background:#0ea5e9;
+    color:#020617;
+    font-weight:bold;
+}
+.container{
+    max-width:1100px;
+    margin:30px auto 60px;
+    padding:10px;
+}
+.box{
+    background:#020617;
+    border:1px solid #1e293b;
+    border-radius:14px;
+    padding:22px;
+    margin-bottom:25px;
+}
+.box h2{
+    margin-top:0;
+    color:#22d3ee;
+}
+ul{ padding-left:20px; }
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:12px;
+}
+th, td{
+    border:1px solid #1e293b;
+    padding:10px;
+}
+th{ color:#38bdf8; }
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <h1>AICT Lectures</h1>
+    <p>Week 11 – Week 13 Notes</p>
+</div>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a class="nav-btn" href="index.html">📘 Week 5</a>
+    <a class="nav-btn" href="week6.html">⌨️ Week 6</a>
+    <a class="nav-btn" href="week7.html">🖥 Week 7</a>
+    <a class="nav-btn" href="week8.html">💾 Week 8</a>
+    <a class="nav-btn" href="week9.html">🧱 Week 9</a>
+
+    <!-- SAME PAGE FOR ALL THREE -->
+    <a class="nav-btn active" href="week11-13.html">📡 Week 11</a>
+    <a class="nav-btn active" href="week11-13.html">📡 Week 12</a>
+    <a class="nav-btn active" href="week11-13.html">📡 Week 13</a>
+
+    <a class="nav-btn" href="week14.html">✍️ Week 14</a>
+    <a class="nav-btn" href="week15.html">🎯 Week 15</a>
+</div>
+
+<div class="container">
+
+<div class="box">
+<h2>📡 Data Communication</h2>
+<ul>
+<li>Data communication is the exchange of data between devices.</li>
+<li>It requires sender, receiver, medium, message, and protocol.</li>
+</ul>
+</div>
+
+<div class="box">
+<h2>📻 Analog Transmission</h2>
+<ul>
+<li>Uses continuous signals.</li>
+<li>Examples: radio waves, sound waves.</li>
+<li>Uses amplitude and frequency.</li>
+</ul>
+</div>
+
+<div class="box">
+<h2>💻 Digital Transmission</h2>
+<ul>
+<li>Uses discrete signals (0 and 1).</li>
+<li>More reliable and less noise-sensitive.</li>
+</ul>
+</div>
+
+<div class="box">
+<h2>🧱 OSI Model</h2>
+<ul>
+<li>7-layer communication model.</li>
+<li>Standard framework by ISO.</li>
+</ul>
+</div>
+
+<div class="box">
+<h2>🪜 OSI Layers</h2>
+<table>
+<tr><th>Layer</th><th>Function</th></tr>
+<tr><td>Application</td><td>User interface</td></tr>
+<tr><td>Presentation</td><td>Encryption, compression</td></tr>
+<tr><td>Session</td><td>Session management</td></tr>
+<tr><td>Transport</td><td>Flow & error control</td></tr>
+<tr><td>Network</td><td>Routing</td></tr>
+<tr><td>Data Link</td><td>Framing</td></tr>
+<tr><td>Physical</td><td>Bit transmission</td></tr>
+</table>
+</div>
+
+<div class="box">
+<h2>📜 Protocol</h2>
+<ul>
+<li>A protocol is a set of rules that governs data communication.</li>
+<li>It defines how data is transmitted between devices.</li>
+<li>Ensures proper understanding between sender and receiver.</li>
+<li>Main elements of protocol:</li>
+<ul>
+<li><b>Syntax:</b> Structure and format of data.</li>
+<li><b>Semantics:</b> Meaning of each section of data.</li>
+<li><b>Timing:</b> Speed of transmission and synchronization.</li>
+</ul>
+</ul>
+</div>
+
+<div class="box">
+<h2>🌐 TCP/IP Model</h2>
+<ul>
+<li>TCP/IP stands for Transmission Control Protocol / Internet Protocol.</li>
+<li>It is the practical model used in real networks.</li>
+<li>Developed by ARPANET.</li>
+<li>Consists of four layers.</li>
+</ul>
+</div>
+
+<div class="box">
+<h2>🪜 TCP/IP Layers</h2>
+<table>
+<tr><th>Layer</th><th>Function</th></tr>
+<tr>
+<td>Application</td>
+<td>Provides services like email, file transfer, web browsing.</td>
+</tr>
+<tr>
+<td>Transport</td>
+<td>End-to-end communication, error control (TCP, UDP).</td>
+</tr>
+<tr>
+<td>Internet</td>
+<td>Logical addressing and routing (IP).</td>
+</tr>
+<tr>
+<td>Network Access</td>
+<td>Physical data transmission.</td>
+</tr>
+</table>
+</div>
+
+<div class="box">
+<h2>🔄 TCP/IP vs OSI Model</h2>
+<ul>
+<li>OSI model has 7 layers.</li>
+<li>TCP/IP model has 4 layers.</li>
+<li>OSI is theoretical.</li>
+<li>TCP/IP is practical and widely used.</li>
+</ul>
+</div>
+
+<div class="box">
+<h2>📞 Modem</h2>
+<ul>
+<li>Modem stands for Modulator and Demodulator.</li>
+<li>Converts digital signals into analog signals.</li>
+<li>Converts received analog signals back to digital.</li>
+<li>Used for data transmission over telephone lines.</li>
+</ul>
+</div>
+
+
+</div>
+</body>
+</html>
