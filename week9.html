@@ -1,0 +1,303 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AICT Lectures – Week 9</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg,#0b1220,#020617);
+    color:#e5e7eb;
+}
+.header{
+    text-align:center;
+    padding:40px 20px;
+    background: linear-gradient(180deg,#1e293b,#020617);
+    border-bottom:1px solid #1e293b;
+}
+.header h1{
+    margin:0;
+    font-size:42px;
+    color:#38bdf8;
+}
+.header p{
+    margin-top:10px;
+    font-size:18px;
+    color:#cbd5f5;
+}
+.navbar{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    padding:30px 20px;
+}
+.nav-btn{
+    padding:14px 22px;
+    border-radius:16px;
+    background:#1e293b;
+    color:#e5e7eb;
+    border:1px solid #334155;
+    text-decoration:none;
+}
+.nav-btn:hover{ background:#334155; }
+.nav-btn.active{
+    background:#0ea5e9;
+    color:#020617;
+    font-weight:bold;
+}
+.container{
+    max-width:1100px;
+    margin:30px auto 60px;
+    padding:10px;
+}
+.box{
+    background:#020617;
+    border:1px solid #1e293b;
+    border-radius:14px;
+    padding:22px;
+    margin-bottom:26px;
+}
+.box h2{
+    margin-top:0;
+    color:#22d3ee;
+}
+ul{ padding-left:20px; }
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:12px;
+}
+th, td{
+    border:1px solid #1e293b;
+    padding:10px;
+}
+th{ color:#38bdf8; }
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <h1>AICT Lectures</h1>
+    <p>Week 5 – Week 15 Notes</p>
+</div>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a class="nav-btn" href="index.html">📘 Week 5</a>
+    <a class="nav-btn" href="week6.html">⌨️ Week 6</a>
+    <a class="nav-btn" href="week7.html">🖥 Week 7</a>
+    <a class="nav-btn" href="week8.html">💾 Week 8</a>
+    <a class="nav-btn active" href="week9.html">🧱 Week 9</a>
+    <a class="nav-btn" href="week10.html">⚙️ Week 10</a>
+    <a class="nav-btn" href="week11.html">🔬 Week 11</a>
+    <a class="nav-btn" href="week12.html">💡 Week 12</a>
+    <a class="nav-btn" href="week13.html">📊 Week 13</a>
+    <a class="nav-btn" href="week14.html">✍️ Week 14</a>
+    <a class="nav-btn" href="week15.html">🎯 Week 15</a>
+</div>
+
+<div class="container">
+
+<!-- STORAGE MANAGEMENT -->
+<div class="box">
+<h2>💽 Storage Management</h2>
+<ul>
+<li>Storage management refers to organizing, maintaining, and protecting data stored on disks.</li>
+<li>It ensures efficient data access, reliability, and optimal disk usage.</li>
+<li>Includes file systems, disk organization, RAID, backups, and maintenance.</li>
+</ul>
+</div>
+
+<!-- FILE SYSTEM -->
+<div class="box">
+<h2>📁 File System</h2>
+<ul>
+<li>A file system defines how data is stored, organized, and retrieved.</li>
+<li>It manages file names, directories, permissions, and storage space.</li>
+<li>Acts as an interface between the operating system and storage hardware.</li>
+</ul>
+</div>
+
+<!-- FILE OPERATIONS -->
+<div class="box">
+<h2>📂 File Operations</h2>
+<ul>
+<li>Create, open, read, write, and delete files.</li>
+<li>Manage file attributes such as name, size, and permissions.</li>
+<li>Ensure data consistency and integrity.</li>
+</ul>
+</div>
+
+<!-- FILE ALLOCATION -->
+<div class="box">
+<h2>🧩 File Allocation Methods</h2>
+<table>
+<tr><th>Method</th><th>Description</th><th>Advantages</th><th>Disadvantages</th></tr>
+<tr>
+<td>Contiguous</td>
+<td>Files stored in continuous disk blocks.</td>
+<td>Fast access</td>
+<td>External fragmentation</td>
+</tr>
+<tr>
+<td>Linked</td>
+<td>Files stored as linked blocks.</td>
+<td>No fragmentation</td>
+<td>Slow random access</td>
+</tr>
+<tr>
+<td>Indexed</td>
+<td>Index block stores pointers to file blocks.</td>
+<td>Efficient access</td>
+<td>Extra space for index</td>
+</tr>
+</table>
+</div>
+
+<!-- DISK ACCESS TIME -->
+<div class="box">
+<h2>⏱ Disk Access Time</h2>
+<ul>
+<li><b>Seek Time:</b> Time to move read/write head.</li>
+<li><b>Rotational Latency:</b> Time for disk to rotate.</li>
+<li><b>Transfer Time:</b> Time to read/write data.</li>
+<li>Total access time = Seek + Latency + Transfer.</li>
+</ul>
+</div>
+
+<!-- BACKUP -->
+<div class="box">
+<h2>🛡 Data Backup</h2>
+<ul>
+<li>Backup is the process of creating copies of data.</li>
+<li>Protects data from loss, corruption, or failure.</li>
+<li>Types: Full backup, Incremental backup, Differential backup.</li>
+</ul>
+</div>
+
+<!-- RAID INTRO -->
+<div class="box">
+<h2>🧱 RAID System – Introduction</h2>
+<ul>
+<li><b>RAID (Redundant Array of Independent Disks)</b> combines multiple disks into one logical unit.</li>
+<li>Improves performance, reliability, and fault tolerance.</li>
+<li>Commonly used in servers and enterprise systems.</li>
+</ul>
+</div>
+
+<!-- RAID OBJECTIVES -->
+<div class="box">
+<h2>🎯 Objectives of RAID</h2>
+<ul>
+<li>Increase data availability.</li>
+<li>Improve read/write speed.</li>
+<li>Provide redundancy against disk failure.</li>
+<li>Ensure continuous system operation.</li>
+</ul>
+</div>
+
+<!-- RAID LEVELS DETAILED -->
+<div class="box">
+<h2>🧩 RAID Levels (Detailed)</h2>
+<table>
+<tr>
+<th>Level</th>
+<th>Working</th>
+<th>Fault Tolerance</th>
+<th>Use</th>
+</tr>
+
+<tr>
+<td>RAID 0</td>
+<td>Data striping across disks.</td>
+<td>None</td>
+<td>High speed, no safety</td>
+</tr>
+
+<tr>
+<td>RAID 1</td>
+<td>Disk mirroring.</td>
+<td>1 disk</td>
+<td>Critical data</td>
+</tr>
+
+<tr>
+<td>RAID 3</td>
+<td>Byte-level striping + parity disk.</td>
+<td>1 disk</td>
+<td>Large data transfers</td>
+</tr>
+
+<tr>
+<td>RAID 5</td>
+<td>Block striping with distributed parity.</td>
+<td>1 disk</td>
+<td>Enterprise storage</td>
+</tr>
+
+<tr>
+<td>RAID 6</td>
+<td>Double parity.</td>
+<td>2 disks</td>
+<td>High availability</td>
+</tr>
+
+<tr>
+<td>RAID 10</td>
+<td>Striping + mirroring.</td>
+<td>High</td>
+<td>Databases, servers</td>
+</tr>
+</table>
+</div>
+
+<!-- RAID ADV DIS -->
+<div class="box">
+<h2>✅ Advantages of RAID</h2>
+<ul>
+<li>Improved performance.</li>
+<li>High data reliability.</li>
+<li>Fault tolerance.</li>
+<li>Reduced downtime.</li>
+</ul>
+</div>
+
+<div class="box">
+<h2>⚠️ Disadvantages of RAID</h2>
+<ul>
+<li>Expensive due to multiple disks.</li>
+<li>Complex configuration.</li>
+<li>Not a substitute for backups.</li>
+</ul>
+</div>
+
+<!-- DEFRAGMENTATION -->
+<div class="box">
+<h2>🧹 Defragmentation</h2>
+<ul>
+<li>Reorganizes fragmented files on a disk.</li>
+<li>Stores data in contiguous blocks.</li>
+<li>Improves HDD performance.</li>
+<li>Not required for SSDs.</li>
+</ul>
+</div>
+
+<!-- MAINTENANCE -->
+<div class="box">
+<h2>🛠 Disk Maintenance</h2>
+<ul>
+<li>Regular defragmentation.</li>
+<li>Disk cleanup.</li>
+<li>Error checking.</li>
+<li>Backup scheduling.</li>
+</ul>
+</div>
+
+</div>
+</body>
+</html>
