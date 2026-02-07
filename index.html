@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AICT Lectures – Week 5</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg,#0b1220,#020617);
+    color:#e5e7eb;
+}
+
+/* HEADER */
+.header{
+    padding:40px 20px;
+    text-align:center;
+    background: linear-gradient(180deg,#1e293b,#020617);
+    border-bottom:1px solid #1e293b;
+}
+.header h1{
+    margin:0;
+    font-size:42px;
+    color:#38bdf8;
+}
+.header p{
+    margin-top:10px;
+    font-size:18px;
+    color:#cbd5f5;
+}
+
+/* NAVIGATION */
+.navbar{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    padding:30px 20px;
+}
+.nav-btn{
+    padding:14px 22px;
+    border-radius:16px;
+    background:#1e293b;
+    color:#e5e7eb;
+    border:1px solid #334155;
+    font-size:16px;
+    text-decoration:none;
+}
+.nav-btn:hover{
+    background:#334155;
+}
+.nav-btn.active{
+    background:#0ea5e9;
+    color:#020617;
+    font-weight:bold;
+}
+
+/* CONTENT */
+.container{
+    max-width:1100px;
+    margin:30px auto 60px;
+    padding:25px;
+    background:#020617;
+    border-radius:14px;
+    box-shadow:0 0 15px rgba(0,0,0,0.6);
+}
+
+h2{
+    color:#22d3ee;
+    margin-bottom:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+th, td{
+    border:1px solid #1e293b;
+    padding:12px;
+    vertical-align:top;
+}
+th{
+    color:#38bdf8;
+    text-align:center;
+}
+ul{
+    margin:0;
+    padding-left:18px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <h1>AICT Lectures</h1>
+    <p>Week 5 – Week 15 Notes</p>
+</div>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a class="nav-btn active" href="index.html">📘 Week 5</a>
+    <a class="nav-btn" href="week6.html">⌨️ Week 6</a>
+    <a class="nav-btn" href="week7.html">➕ Week 7</a>
+    <a class="nav-btn" href="week8.html">🔢 Week 8</a>
+    <a class="nav-btn" href="week9.html">🧮 Week 9</a>
+    <a class="nav-btn" href="week10.html">⚙️ Week 10</a>
+    <a class="nav-btn" href="week11.html">🔬 Week 11</a>
+    <a class="nav-btn" href="week12.html">💡 Week 12</a>
+    <a class="nav-btn" href="week13.html">📊 Week 13</a>
+    <a class="nav-btn" href="week14.html">✍️ Week 14</a>
+    <a class="nav-btn" href="week15.html">🎯 Week 15</a>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+<h2>Week 5 – Comparison of Computing Facilities</h2>
+
+<table>
+<tr>
+    <th>Feature</th>
+    <th>Centralized Computing</th>
+    <th>Distributed Computing</th>
+    <th>Decentralized Computing</th>
+</tr>
+
+<tr>
+<td>Definition</td>
+<td>
+<ul>
+<li>Single central system</li>
+<li>All resources at one location</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Multiple connected systems</li>
+<li>Shared processing via network</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>No central authority</li>
+<li>Independent nodes</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<td>Examples</td>
+<td>
+<ul>
+<li>Mainframe computers</li>
+<li>Enterprise data centers</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Cloud computing</li>
+<li>Grid systems</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Blockchain</li>
+<li>Decentralized applications</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<td>Control</td>
+<td>Fully centralized</td>
+<td>Partially decentralized</td>
+<td>Fully decentralized</td>
+</tr>
+
+<tr>
+<td>Scalability</td>
+<td>
+<ul>
+<li>Limited</li>
+<li>Expensive to expand</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Highly scalable</li>
+<li>Easy node addition</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Moderate</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<td>Fault Tolerance</td>
+<td>
+<ul>
+<li>Low</li>
+<li>Single point of failure</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Moderate to high</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Very high</li>
+<li>No single point of failure</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<td>Advantages</td>
+<td>
+<ul>
+<li>Easy management</li>
+<li>High consistency</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Resource sharing</li>
+<li>Better performance</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>High security</li>
+<li>Transparency</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<td>Disadvantages</td>
+<td>
+<ul>
+<li>Single point of failure</li>
+<li>Costly upgrades</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Complex management</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Slow processing</li>
+<li>Difficult governance</li>
+</ul>
+</td>
+</tr>
+
+</table>
+</div>
+
+</body>
+</html>
