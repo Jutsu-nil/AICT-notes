@@ -1,0 +1,655 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AICT Lectures – Week 15</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #2c3e50;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .nav-btn {
+            color: white;
+            text-decoration: none;
+            margin: 5px;
+            padding: 8px 12px;
+            background-color: #34495e;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .nav-btn:hover {
+            background-color: #1abc9c;
+        }
+
+        .active {
+            background-color: #1abc9c;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        h3 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .box {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-left: 5px solid #1abc9c;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        ul {
+            margin-top: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid #aaa;
+        }
+
+        th {
+            background-color: #1abc9c;
+            color: white;
+            padding: 8px;
+        }
+
+        td {
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a class="nav-btn" href="index.html">Week 5</a>
+    <a class="nav-btn" href="week6.html">Week 6</a>
+    <a class="nav-btn" href="week7.html">Week 7</a>
+    <a class="nav-btn" href="week8.html">Week 8</a>
+    <a class="nav-btn" href="week9.html">Week 9</a>
+    <a class="nav-btn" href="week11-13.html">Week 11</a>
+    <a class="nav-btn" href="week11-13.html">Week 12</a>
+    <a class="nav-btn" href="week11-13.html">Week 13</a>
+    <a class="nav-btn" href="week14.html">Week 14</a>
+    <a class="nav-btn active" href="week15.html">Week 15</a>
+</div>
+
+<div class="container">
+
+    <h1>AICT Lectures</h1>
+    <p style="text-align:center;">Week 5 – Week 15 Notes</p>
+
+    <!-- INTERNET -->
+    <div class="box">
+        <h3>What is Internet?</h3>
+        <p>
+            The Internet is a global network of interconnected computers and devices that communicate
+            using standardized communication protocols. It allows users to share information, access
+            content, and interact with online services from anywhere.
+        </p>
+    </div>
+
+    <!-- HISTORY -->
+    <div class="box">
+        <h3>History of Internet</h3>
+        <ul>
+            <li><b>1960s – ARPANET:</b> First network funded by the U.S. Department of Defense</li>
+            <li><b>1970s:</b> Email developed by Ray Tomlinson</li>
+            <li><b>1980s:</b> TCP/IP established as standard networking protocol</li>
+            <li><b>1990:</b> Tim Berners-Lee invented the World Wide Web</li>
+            <li><b>2000s:</b> Growth of broadband, social media, e-commerce, and mobile internet</li>
+        </ul>
+    </div>
+
+    <!-- EARLY INTERNET -->
+    <div class="box">
+        <h3>Early Days of the Internet</h3>
+        <ul>
+            <li>Used only by research institutions and government agencies</li>
+            <li>Main purpose was communication and file sharing</li>
+            <li>No graphical interface – text-based commands were used</li>
+        </ul>
+    </div>
+
+    <!-- EVOLUTION -->
+    <div class="box">
+        <h3>Evolution of the Internet</h3>
+        <ul>
+            <li>Shift from dial-up to broadband connections</li>
+            <li>Mobile internet evolution from 3G → 4G → 5G</li>
+            <li>Fiber optics for ultra-fast speeds</li>
+            <li>Satellite internet for remote areas (e.g. Starlink)</li>
+        </ul>
+    </div>
+
+    <!-- WEB LINK -->
+    <div class="box">
+        <h3>Web Link (URL)</h3>
+        <p>
+            A web link is a unique address used to access a resource on the Internet.
+            It is also called a URL (Uniform Resource Locator).
+        </p>
+        <ul>
+            <li>Example: https://www.example.com</li>
+            <li>Typed in the browser address bar</li>
+        </ul>
+    </div>
+
+    <!-- TYPES OF LINKS -->
+    <div class="box">
+        <h3>Types of Web Links</h3>
+        <ul>
+            <li><b>Internal Links:</b> Connect pages within the same website</li>
+            <li><b>External Links:</b> Redirect to other websites</li>
+            <li><b>Hyperlinks:</b> Clickable text, image, or button</li>
+        </ul>
+    </div>
+
+    <!-- IMPORTANCE -->
+    <div class="box">
+        <h3>Importance of Web Links</h3>
+        <ul>
+            <li>Website navigation</li>
+            <li>SEO and search engine ranking</li>
+            <li>Resource sharing and referencing</li>
+        </ul>
+    </div>
+
+    <!-- BROWSER -->
+    <div class="box">
+        <h3>Browser</h3>
+        <p>
+            A browser is software that allows users to access and view content on the Internet.
+        </p>
+        <ul>
+            <li>Chrome</li>
+            <li>Firefox</li>
+            <li>Edge</li>
+            <li>Safari</li>
+        </ul>
+    </div>
+
+    <!-- FEATURES -->
+    <div class="box">
+        <h3>Features of Browsers</h3>
+        <ul>
+            <li>Tabbed browsing</li>
+            <li>Bookmarking</li>
+            <li>Extensions / Add-ons</li>
+            <li>Privacy / Incognito mode</li>
+        </ul>
+    </div>
+
+    <!-- ISP -->
+    <div class="box">
+        <h3>Internet Service Providers (ISPs)</h3>
+        <p>
+            ISPs provide Internet access and maintain the infrastructure required for connectivity.
+        </p>
+        <ul>
+            <li>PTCL</li>
+            <li>Comcast</li>
+            <li>AT&T</li>
+        </ul>
+    </div>
+
+    <!-- CONNECTION TYPES -->
+    <div class="box">
+        <h3>Types of Internet Connections</h3>
+        <ul>
+            <li>DSL</li>
+            <li>Cable</li>
+            <li>Fiber</li>
+        </ul>
+    </div>
+
+    <!-- COMPARISON TABLE 1 -->
+    <div class="box">
+        <h3>Comparison of Internet Connection Types</h3>
+        <table>
+            <tr>
+                <th>Feature</th>
+                <th>DSL</th>
+                <th>Cable</th>
+                <th>Fiber</th>
+            </tr>
+            <tr>
+                <td>Speed</td>
+                <td>Up to 100 Mbps</td>
+                <td>Up to 1 Gbps</td>
+                <td>Up to 10 Gbps</td>
+            </tr>
+            <tr>
+                <td>Availability</td>
+                <td>Widely available</td>
+                <td>Urban areas</td>
+                <td>Limited regions</td>
+            </tr>
+            <tr>
+                <td>Technology</td>
+                <td>Telephone lines</td>
+                <td>Coaxial cables</td>
+                <td>Fiber-optic cables</td>
+            </tr>
+            <tr>
+                <td>Best For</td>
+                <td>Basic usage</td>
+                <td>Streaming & gaming</td>
+                <td>High-demand apps</td>
+            </tr>
+        </table>
+    </div>
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AICT Lectures – Week 15</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #2c3e50;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .nav-btn {
+            color: white;
+            text-decoration: none;
+            margin: 5px;
+            padding: 8px 12px;
+            background-color: #34495e;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .nav-btn:hover {
+            background-color: #1abc9c;
+        }
+
+        .active {
+            background-color: #1abc9c;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        h3 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .box {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-left: 5px solid #1abc9c;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        ul {
+            margin-top: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid #aaa;
+        }
+
+        th {
+            background-color: #1abc9c;
+            color: white;
+            padding: 8px;
+        }
+
+        td {
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a class="nav-btn" href="index.html">Week 5</a>
+    <a class="nav-btn" href="week6.html">Week 6</a>
+    <a class="nav-btn" href="week7.html">Week 7</a>
+    <a class="nav-btn" href="week8.html">Week 8</a>
+    <a class="nav-btn" href="week9.html">Week 9</a>
+    <a class="nav-btn" href="week11-13.html">Week 11</a>
+    <a class="nav-btn" href="week11-13.html">Week 12</a>
+    <a class="nav-btn" href="week11-13.html">Week 13</a>
+    <a class="nav-btn" href="week14.html">Week 14</a>
+    <a class="nav-btn active" href="week15.html">Week 15</a>
+</div>
+
+<div class="container">
+
+    <h1>AICT Lectures</h1>
+    <p style="text-align:center;">Week 5 – Week 15 Notes</p>
+
+    <!-- INTERNET -->
+    <div class="box">
+        <h3>What is Internet?</h3>
+        <p>
+            The Internet is a global network of interconnected computers and devices that communicate
+            using standardized communication protocols. It allows users to share information, access
+            content, and interact with online services from anywhere.
+        </p>
+    </div>
+
+    <!-- HISTORY -->
+    <div class="box">
+        <h3>History of Internet</h3>
+        <ul>
+            <li><b>1960s – ARPANET:</b> First network funded by the U.S. Department of Defense</li>
+            <li><b>1970s:</b> Email developed by Ray Tomlinson</li>
+            <li><b>1980s:</b> TCP/IP established as standard networking protocol</li>
+            <li><b>1990:</b> Tim Berners-Lee invented the World Wide Web</li>
+            <li><b>2000s:</b> Growth of broadband, social media, e-commerce, and mobile internet</li>
+        </ul>
+    </div>
+
+    <!-- EARLY INTERNET -->
+    <div class="box">
+        <h3>Early Days of the Internet</h3>
+        <ul>
+            <li>Used only by research institutions and government agencies</li>
+            <li>Main purpose was communication and file sharing</li>
+            <li>No graphical interface – text-based commands were used</li>
+        </ul>
+    </div>
+
+    <!-- EVOLUTION -->
+    <div class="box">
+        <h3>Evolution of the Internet</h3>
+        <ul>
+            <li>Shift from dial-up to broadband connections</li>
+            <li>Mobile internet evolution from 3G → 4G → 5G</li>
+            <li>Fiber optics for ultra-fast speeds</li>
+            <li>Satellite internet for remote areas (e.g. Starlink)</li>
+        </ul>
+    </div>
+
+    <!-- WEB LINK -->
+    <div class="box">
+        <h3>Web Link (URL)</h3>
+        <p>
+            A web link is a unique address used to access a resource on the Internet.
+            It is also called a URL (Uniform Resource Locator).
+        </p>
+        <ul>
+            <li>Example: https://www.example.com</li>
+            <li>Typed in the browser address bar</li>
+        </ul>
+    </div>
+
+    <!-- TYPES OF LINKS -->
+    <div class="box">
+        <h3>Types of Web Links</h3>
+        <ul>
+            <li><b>Internal Links:</b> Connect pages within the same website</li>
+            <li><b>External Links:</b> Redirect to other websites</li>
+            <li><b>Hyperlinks:</b> Clickable text, image, or button</li>
+        </ul>
+    </div>
+
+    <!-- IMPORTANCE -->
+    <div class="box">
+        <h3>Importance of Web Links</h3>
+        <ul>
+            <li>Website navigation</li>
+            <li>SEO and search engine ranking</li>
+            <li>Resource sharing and referencing</li>
+        </ul>
+    </div>
+
+    <!-- BROWSER -->
+    <div class="box">
+        <h3>Browser</h3>
+        <p>
+            A browser is software that allows users to access and view content on the Internet.
+        </p>
+        <ul>
+            <li>Chrome</li>
+            <li>Firefox</li>
+            <li>Edge</li>
+            <li>Safari</li>
+        </ul>
+    </div>
+
+    <!-- FEATURES -->
+    <div class="box">
+        <h3>Features of Browsers</h3>
+        <ul>
+            <li>Tabbed browsing</li>
+            <li>Bookmarking</li>
+            <li>Extensions / Add-ons</li>
+            <li>Privacy / Incognito mode</li>
+        </ul>
+    </div>
+
+    <!-- ISP -->
+    <div class="box">
+        <h3>Internet Service Providers (ISPs)</h3>
+        <p>
+            ISPs provide Internet access and maintain the infrastructure required for connectivity.
+        </p>
+        <ul>
+            <li>PTCL</li>
+            <li>Comcast</li>
+            <li>AT&T</li>
+        </ul>
+    </div>
+
+    <!-- CONNECTION TYPES -->
+    <div class="box">
+        <h3>Types of Internet Connections</h3>
+        <ul>
+            <li>DSL</li>
+            <li>Cable</li>
+            <li>Fiber</li>
+        </ul>
+    </div>
+
+    <!-- COMPARISON TABLE 1 -->
+    <div class="box">
+        <h3>Comparison of Internet Connection Types</h3>
+        <table>
+            <tr>
+                <th>Feature</th>
+                <th>DSL</th>
+                <th>Cable</th>
+                <th>Fiber</th>
+            </tr>
+            <tr>
+                <td>Speed</td>
+                <td>Up to 100 Mbps</td>
+                <td>Up to 1 Gbps</td>
+                <td>Up to 10 Gbps</td>
+            </tr>
+            <tr>
+                <td>Availability</td>
+                <td>Widely available</td>
+                <td>Urban areas</td>
+                <td>Limited regions</td>
+            </tr>
+            <tr>
+                <td>Technology</td>
+                <td>Telephone lines</td>
+                <td>Coaxial cables</td>
+                <td>Fiber-optic cables</td>
+            </tr>
+            <tr>
+                <td>Best For</td>
+                <td>Basic usage</td>
+                <td>Streaming & gaming</td>
+                <td>High-demand apps</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- OSP -->
+    <div class="box">
+        <h3>Online Service Providers (OSPs)</h3>
+        <p>
+            OSPs provide services and content over the Internet such as cloud storage,
+            email, streaming, and e-commerce.
+        </p>
+        <ul>
+            <li>Google</li>
+            <li>Amazon</li>
+            <li>Dropbox</li>
+        </ul>
+    </div>
+
+    <!-- SERVICES -->
+    <div class="box">
+        <h3>Services Offered by OSPs</h3>
+        <ul>
+            <li>Search engines</li>
+            <li>Cloud storage</li>
+            <li>E-commerce</li>
+            <li>Streaming services</li>
+            <li>Email and communication tools</li>
+            <li>Productivity tools</li>
+        </ul>
+    </div>
+
+    <!-- COMPARISON TABLE 2 -->
+    <div class="box">
+        <h3>Difference Between ISP and OSP</h3>
+        <table>
+            <tr>
+                <th>Aspect</th>
+                <th>ISP</th>
+                <th>OSP</th>
+            </tr>
+            <tr>
+                <td>Definition</td>
+                <td>Provides Internet connectivity</td>
+                <td>Provides services over Internet</td>
+            </tr>
+            <tr>
+                <td>Primary Function</td>
+                <td>Network access & bandwidth</td>
+                <td>Content & services</td>
+            </tr>
+            <tr>
+                <td>Examples</td>
+                <td>PTCL, AT&T, Comcast</td>
+                <td>Google, Netflix, Dropbox</td>
+            </tr>
+            <tr>
+                <td>Role</td>
+                <td>Connects users to Internet</td>
+                <td>Enhances user experience</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- OSP -->
+    <div class="box">
+        <h3>Online Service Providers (OSPs)</h3>
+        <p>
+            OSPs provide services and content over the Internet such as cloud storage,
+            email, streaming, and e-commerce.
+        </p>
+        <ul>
+            <li>Google</li>
+            <li>Amazon</li>
+            <li>Dropbox</li>
+        </ul>
+    </div>
+
+    <!-- SERVICES -->
+    <div class="box">
+        <h3>Services Offered by OSPs</h3>
+        <ul>
+            <li>Search engines</li>
+            <li>Cloud storage</li>
+            <li>E-commerce</li>
+            <li>Streaming services</li>
+            <li>Email and communication tools</li>
+            <li>Productivity tools</li>
+        </ul>
+    </div>
+
+    <!-- COMPARISON TABLE 2 -->
+    <div class="box">
+        <h3>Difference Between ISP and OSP</h3>
+        <table>
+            <tr>
+                <th>Aspect</th>
+                <th>ISP</th>
+                <th>OSP</th>
+            </tr>
+            <tr>
+                <td>Definition</td>
+                <td>Provides Internet connectivity</td>
+                <td>Provides services over Internet</td>
+            </tr>
+            <tr>
+                <td>Primary Function</td>
+                <td>Network access & bandwidth</td>
+                <td>Content & services</td>
+            </tr>
+            <tr>
+                <td>Examples</td>
+                <td>PTCL, AT&T, Comcast</td>
+                <td>Google, Netflix, Dropbox</td>
+            </tr>
+            <tr>
+                <td>Role</td>
+                <td>Connects users to Internet</td>
+                <td>Enhances user experience</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+</body>
+</html>
