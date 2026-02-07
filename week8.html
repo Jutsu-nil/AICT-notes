@@ -1,0 +1,286 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AICT Lectures – Week 8</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg,#0b1220,#020617);
+    color:#e5e7eb;
+}
+.header{
+    padding:40px 20px;
+    text-align:center;
+    background: linear-gradient(180deg,#1e293b,#020617);
+    border-bottom:1px solid #1e293b;
+}
+.header h1{
+    margin:0;
+    font-size:42px;
+    color:#38bdf8;
+}
+.header p{
+    margin-top:10px;
+    font-size:18px;
+    color:#cbd5f5;
+}
+.navbar{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    padding:30px 20px;
+}
+.nav-btn{
+    padding:14px 22px;
+    border-radius:16px;
+    background:#1e293b;
+    color:#e5e7eb;
+    border:1px solid #334155;
+    font-size:16px;
+    text-decoration:none;
+}
+.nav-btn:hover{ background:#334155; }
+.nav-btn.active{
+    background:#0ea5e9;
+    color:#020617;
+    font-weight:bold;
+}
+.container{
+    max-width:1100px;
+    margin:30px auto 60px;
+    padding:10px;
+}
+.box{
+    background:#020617;
+    border:1px solid #1e293b;
+    border-radius:14px;
+    padding:22px;
+    margin-bottom:25px;
+}
+.box h2{
+    margin-top:0;
+    color:#22d3ee;
+}
+ul{ padding-left:20px; }
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:12px;
+}
+th, td{
+    border:1px solid #1e293b;
+    padding:10px;
+}
+th{ color:#38bdf8; }
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <h1>AICT Lectures</h1>
+    <p>Week 5 – Week 15 Notes</p>
+</div>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a class="nav-btn" href="index.html">📘 Week 5</a>
+    <a class="nav-btn" href="week6.html">⌨️ Week 6</a>
+    <a class="nav-btn" href="week7.html">🖥 Week 7</a>
+    <a class="nav-btn active" href="week8.html">💾 Week 8</a>
+    <a class="nav-btn" href="week9.html">🧮 Week 9</a>
+    <a class="nav-btn" href="week10.html">⚙️ Week 10</a>
+    <a class="nav-btn" href="week11.html">🔬 Week 11</a>
+    <a class="nav-btn" href="week12.html">💡 Week 12</a>
+    <a class="nav-btn" href="week13.html">📊 Week 13</a>
+    <a class="nav-btn" href="week14.html">✍️ Week 14</a>
+    <a class="nav-btn" href="week15.html">🎯 Week 15</a>
+</div>
+
+<div class="container">
+
+<!-- INTRO -->
+<div class="box">
+<h2>💾 Introduction to Storage Devices</h2>
+<ul>
+<li>Storage devices are hardware components used to store digital data.</li>
+<li>They store data ranging from text files to multimedia and software.</li>
+<li>They include primary storage (RAM) and secondary storage (HDD, SSD).</li>
+</ul>
+</div>
+
+<!-- ROLE -->
+<div class="box">
+<h2>🧠 Role of Storage Devices in Computing</h2>
+<ul>
+<li><b>Data Storage & Retrieval:</b> Store data permanently or temporarily.</li>
+<li><b>System Performance:</b> Faster storage improves boot and load times.</li>
+<li><b>Data Management & Backup:</b> Enables organization, backup, and recovery.</li>
+<li><b>Resource Sharing:</b> Supports NAS and cloud-based access.</li>
+<li><b>Virtualization & Cloud:</b> Enables efficient data access for virtual machines.</li>
+</ul>
+</div>
+
+<!-- UNITS -->
+<div class="box">
+<h2>📏 Units of Storage</h2>
+<ul>
+<li><b>Bit:</b> Smallest unit (0 or 1).</li>
+<li><b>Byte:</b> 8 bits, represents a character.</li>
+<li><b>Kilobyte (KB):</b> 1,024 bytes.</li>
+<li><b>Megabyte (MB):</b> 1,024 KB.</li>
+<li><b>Gigabyte (GB):</b> 1,024 MB.</li>
+<li><b>Terabyte (TB):</b> 1,024 GB.</li>
+<li>Larger units: PB, EB, ZB, YB.</li>
+</ul>
+</div>
+
+<!-- FILE SIZES -->
+<div class="box">
+<h2>📂 Examples of Typical File Sizes</h2>
+<table>
+<tr><th>File Type</th><th>Typical Size</th></tr>
+<tr><td>Text Document</td><td>1–10 KB (plain), 100 KB–few MB (formatted)</td></tr>
+<tr><td>High-Resolution Image</td><td>2–5 MB (JPEG), 20–50 MB (RAW)</td></tr>
+<tr><td>Audio File</td><td>~3 MB per 3 min MP3, 10 MB/min WAV</td></tr>
+<tr><td>Video File</td><td>500 MB/hr (HD), 7–10 GB/hr (4K)</td></tr>
+</table>
+</div>
+
+<!-- PRIMARY MEMORY -->
+<div class="box">
+<h2>🧠 Primary Memory</h2>
+<ul>
+<li>Main memory used by CPU for active programs.</li>
+<li>Volatile — data lost when power is off.</li>
+<li>Directly accessible by CPU.</li>
+<li>Higher RAM improves multitasking.</li>
+</ul>
+</div>
+
+<!-- TYPES -->
+<div class="box">
+<h2>🧩 Types of Primary Memory</h2>
+<ul>
+<li><b>RAM:</b> Volatile memory for running programs.</li>
+<li><b>ROM:</b> Non-volatile memory storing firmware.</li>
+</ul>
+</div>
+
+<!-- RAM -->
+<div class="box">
+<h2>⚡ Random Access Memory (RAM)</h2>
+<ul>
+<li>Temporary storage for active data.</li>
+<li>Allows fast CPU read/write operations.</li>
+<li>Supports multitasking and responsiveness.</li>
+<li>DDR generations: DDR3, DDR4, DDR5.</li>
+</ul>
+</div>
+
+<!-- SRAM -->
+<div class="box">
+<h2>🚀 Static RAM (SRAM)</h2>
+<ul>
+<li>Uses flip-flop circuits with six transistors.</li>
+<li>No refresh required.</li>
+<li>Very fast and reliable.</li>
+<li>Used in cache memory.</li>
+</ul>
+</div>
+
+<!-- DRAM -->
+<div class="box">
+<h2>🔄 Dynamic RAM (DRAM)</h2>
+<ul>
+<li>Uses capacitor and transistor.</li>
+<li>Needs constant refreshing.</li>
+<li>Higher density and cheaper.</li>
+<li>Main system memory.</li>
+</ul>
+</div>
+
+<!-- CACHE -->
+<div class="box">
+<h2>⚡ Cache Memory</h2>
+<ul>
+<li>High-speed memory between CPU and RAM.</li>
+<li>Stores frequently used data.</li>
+<li>Levels: L1, L2, L3.</li>
+<li>Improves CPU efficiency.</li>
+</ul>
+</div>
+
+<!-- SECONDARY -->
+<div class="box">
+<h2>💽 Secondary Storage</h2>
+<ul>
+<li>Non-volatile long-term storage.</li>
+<li>High capacity and low cost per GB.</li>
+<li>Used for OS, programs, and backups.</li>
+</ul>
+</div>
+
+<!-- HDD -->
+<div class="box">
+<h2>🖴 Hard Disk Drive (HDD)</h2>
+<ul>
+<li>Magnetic storage with spinning platters.</li>
+<li>High capacity and affordable.</li>
+<li>Slower and mechanical.</li>
+</ul>
+</div>
+
+<!-- SSD -->
+<div class="box">
+<h2>⚡ Solid State Drive (SSD)</h2>
+<ul>
+<li>Uses flash memory.</li>
+<li>No moving parts.</li>
+<li>Faster, quieter, durable.</li>
+</ul>
+</div>
+
+<!-- HDD VS SSD -->
+<div class="box">
+<h2>⚖ HDD vs SSD</h2>
+<table>
+<tr><th>Feature</th><th>HDD</th><th>SSD</th></tr>
+<tr><td>Speed</td><td>Slow</td><td>Fast</td></tr>
+<tr><td>Durability</td><td>Low</td><td>High</td></tr>
+<tr><td>Noise</td><td>Noisy</td><td>Silent</td></tr>
+<tr><td>Cost</td><td>Cheaper</td><td>Expensive</td></tr>
+</table>
+</div>
+
+<!-- USB -->
+<div class="box">
+<h2>🔌 USB Drives & Memory Cards</h2>
+<ul>
+<li>Portable and removable storage.</li>
+<li>Used for data transfer and backup.</li>
+<li>Available in many sizes.</li>
+<li>Fast versions: USB 3.0, UHS SD cards.</li>
+</ul>
+</div>
+
+<!-- COMPARISON -->
+<div class="box">
+<h2>📊 Primary vs Secondary Storage</h2>
+<table>
+<tr><th>Primary</th><th>Secondary</th></tr>
+<tr><td>Volatile</td><td>Non-volatile</td></tr>
+<tr><td>Fast</td><td>Slower</td></tr>
+<tr><td>Limited capacity</td><td>Large capacity</td></tr>
+<tr><td>CPU accessible</td><td>Not directly accessible</td></tr>
+</table>
+</div>
+
+</div>
+</body>
+</html>
